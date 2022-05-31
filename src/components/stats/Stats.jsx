@@ -10,7 +10,7 @@ export default function Stats({ title, stats }) {
   ));
   return (
     <section className={s.statistics}>
-      <h2 className={s.title}>{title}</h2>
+      {title && <h2 className={s.title}>{title}</h2>}
 
       <ul className={s.list}>{elements}</ul>
     </section>
